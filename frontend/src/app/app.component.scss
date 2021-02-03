@@ -1,0 +1,81 @@
+@import 'https://fonts.googleapis.com/css?family=Inconsolata';
+
+nav {
+  display: flex;
+  font-family: 'Inconsolata', Helvetica, sans-serif;
+  justify-content: space-around;
+  align-items: center;
+  background: #1e272e;
+  color: #fff;
+  text-decoration: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: solid 2px #e84118;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    li {
+      cursor: pointer;
+      padding: 1rem;
+      list-style: none;
+      transition: .3s ease-in-out;
+      &:hover {
+        background: #f0f0f0;
+        color: black;
+      }
+    }
+  }
+}
+
+.drop {
+  display: none;
+}
+
+.profile {
+  position: relative;
+  &:hover {
+    .drop {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      right: 0;
+      left: 0;
+      bottom: -3.25rem;
+      border-radius: .5rem;
+      position: absolute;
+      width: 300px;
+      background: #1e272e;
+      color: #fff;
+      div {
+        background: #e84118;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.content {
+  margin-top: 3.25rem;
+  height: 99vh;
+}
+
+footer {
+  width: 100%;
+  padding: .5rem 1rem;
+  font-family: 'Inconsolata', Helvetica, sans-serif;
+  background: #1e272e;
+  div {
+    width: 100%;
+    height: 1px;
+    margin-bottom: .5rem;
+    background: #e84118;
+  }
+  p {
+    text-align: right;
+    color: #fff;
+  }
+}
